@@ -3,7 +3,7 @@ let papel = 2;
 let tesoura = 3;
 let opcoes = ['inicio','Pedra','Papel','Tesoura']
 function pedraPapeltesoura(opcao){
-    let escolhaRôbo = Math.round(Math.random()*3 + 1)
+    let escolhaRôbo =parseInt(Math.random()*3 + 1)
     if(opcao == pedra && escolhaRôbo == pedra){
         console.log(`Você escolheu :${opcoes[opcao]} / Robô escolheu: ${opcoes[escolhaRôbo]}\nEmpate!`)
     }
